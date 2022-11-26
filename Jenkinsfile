@@ -12,6 +12,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building stage!'
+                echo 'build essential'
+                sh 'pwd'
+                //sh 'sudo apt-get install build-essential'
                 sh 'make build'
             }
         }

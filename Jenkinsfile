@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building stage!'
                 echo 'build essential'
-                //sh 'sudo apt-get install build-essential'
+                sh 'sudo apt-get install build-essential'
                 sh 'make build'
             }
         }

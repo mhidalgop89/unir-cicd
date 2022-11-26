@@ -6,6 +6,7 @@ pipeline {
         stage('Source') {
             steps {
                 //git 'https://github.com/mhidalgop89/unir-cicd.git'
+                sh 'pwd'                
                 sh 'git clone https://github.com/mhidalgop89/unir-cicd.git'
             }
         }
@@ -13,7 +14,6 @@ pipeline {
             steps {
                 echo 'Building stage!'
                 echo 'build essential'
-                sh 'pwd'
                 //sh 'sudo apt-get install build-essential'
                 sh 'make build'
             }

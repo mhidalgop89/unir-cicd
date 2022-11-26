@@ -43,7 +43,7 @@ pipeline {
         }
         failure {
             echo 'Error en el pipeline'
-            mail to: 'dianaximena508@gmail.com', body: "<b>Pipeline - ERROR</b><br>Proyecto: ${env.JOB_NAME} <br>N&uacute;mero compilaci&oacute;n: ${env.BUILD_NUMBER} <br> URL de compilaci&oacute;n: ${env.BUILD_URL}", charset: 'UTF-8', mimeType: 'text/html', subject: "ERROR CI: Nombre del proyecto -> ${env.JOB_NAME}";
+            mail to: 'mario.hidalgo89@hotmail.com', body: "<b>Pipeline - ERROR</b><br>Proyecto: ${env.JOB_NAME} <br>N&uacute;mero compilaci&oacute;n: ${env.BUILD_NUMBER} <br> URL de compilaci&oacute;n: ${env.BUILD_URL}", charset: 'UTF-8', mimeType: 'text/html', subject: "ERROR CI: Nombre del proyecto -> ${env.JOB_NAME}";
         }
     }
 }
